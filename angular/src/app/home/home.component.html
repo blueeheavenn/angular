@@ -1,0 +1,36 @@
+<html>
+<head></head>
+<body>
+   <fieldset>
+    <label for="username">username:</label>
+    <input id="n" type="text" name="name" #nam=ngModel [(ngModel)]="user.name" onmouseover="this.style.color='red'; this.style.cursor='cell'"
+     required/> <span id="err" style="display:none"> name required- field invalid</span>
+    <div *ngIf="nam.invalid && nam.touched" class="alert alert-danger"> username required </div>  
+    <span javascript></span>
+    </fieldset>
+    <fieldset><label for="password">password:</label>
+    <input type="password" name="pwd" [(ngModel)]="user.pwd" required >
+    </fieldset>
+<!-- <input type="button" #btn onclick="(function($event)
+{//alert('hey');
+//alert('hey baba '+event);
+console.log('hey baba '+event.target.value);
+atp();
+})();" value ="submit"> -->
+
+<!-- <input type="button" #btn onclick="(()=>{
+    alert(document.getElementById('n'));
+    
+    document.getElementById('n').value==''? document.getElementById('err').style.display='inline-block':null
+
+    })();" value ="submit"> -->
+
+    <input type='button' onclick='validate()' value='submit'/>
+
+    
+
+</body>
+
+
+
+</html>
