@@ -14,4 +14,6 @@ import {RenterListServiceService } from './renter-list-service.service'
   providers:[ RenterListServiceService ]
 
 })
-export class RentersModule { }
+export class RentersModule { 
+  
+}

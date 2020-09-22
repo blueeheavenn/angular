@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
   }
 
   btinClick(event:any):void{
-    console.log('ELEMETN  '+event);
+    console.log('ELEMEnt  '+event);
   
   
   }
